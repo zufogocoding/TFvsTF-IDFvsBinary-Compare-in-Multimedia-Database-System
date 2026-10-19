@@ -1,0 +1,31 @@
+{
+  "dataset_id": "cranfield-1400-v1",
+  "name": "Cranfield 1400",
+  "language": "en",
+  "source_url": "https://ir.dcs.gla.ac.uk/resources/test_collections/cran/cran.tar.gz",
+  "documentation_url": "https://ir-datasets.com/cranfield.html",
+  "archive_sha256": "8c48a8412e4a7e6e0dd5af99c959f8d75fdf88135602adc1a56aa22770652d64",
+  "prepared_at_utc": "2026-10-18T08:05:54.902234+00:00",
+  "counts": {
+    "documents": 1400,
+    "queries": 225,
+    "qrels": 1837,
+    "dev": 45,
+    "test": 180
+  },
+  "grade_counts": {
+    "2": 387,
+    "3": 734,
+    "4": 363,
+    "-1": 225,
+    "1": 128
+  },
+  "query_id_mapping": "1-based source record order, matching qrels and ir_datasets; original .I stored separately",
+  "relevance_rule": "raw_grade > 0; unlisted pairs are treated as nonrelevant",
+  "ndcg_rule": "binary gains only; does not assume an orientation for positive grade levels",
+  "files": {
+    "documents.jsonl": "e84036a2688ffe506893cdac7f9707c3e580411954958df06ef44c89540e0b9c",
+    "queries.jsonl": "31faedda4b4494b6352d088fad79f56a579b00d5b4a611837f4fdcd015ae5169",
+    "qrels.tsv": "1ac25938ee5cb2a99e87cea95ab9302c68fc72785d019e3ba378ed3a19e1e175"
+  }
+}

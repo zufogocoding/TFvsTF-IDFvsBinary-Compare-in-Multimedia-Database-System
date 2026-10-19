@@ -1,0 +1,39 @@
+test_actual_counts_and_split (test_dataset.DatasetTests.test_actual_counts_and_split) ... ok
+test_all_queries_have_positive_judgments (test_dataset.DatasetTests.test_all_queries_have_positive_judgments) ... ok
+test_hash_corruption_is_detected (test_dataset.DatasetTests.test_hash_corruption_is_detected) ... ok
+test_qrel_validation_rejects_wrong_reference (test_dataset.DatasetTests.test_qrel_validation_rejects_wrong_reference) ... ok
+test_query_id_is_source_position_not_original_tag (test_dataset.DatasetTests.test_query_id_is_source_position_not_original_tag) ... ok
+test_tagged_parser_preserves_fields (test_dataset.DatasetTests.test_tagged_parser_preserves_fields) ... ok
+test_all_matrices_are_float64_and_unit_norm (test_engine.WeightingTests.test_all_matrices_are_float64_and_unit_norm) ... ok
+test_binary_tie_break_is_lexical (test_engine.WeightingTests.test_binary_tie_break_is_lexical) ... ok
+test_counts_and_corpus_idf (test_engine.WeightingTests.test_counts_and_corpus_idf) ... ok
+test_empty_document_is_retained (test_engine.WeightingTests.test_empty_document_is_retained) ... ok
+test_normalization_is_shared (test_engine.WeightingTests.test_normalization_is_shared) ... ok
+test_query_repetition_is_binary_or_count_as_declared (test_engine.WeightingTests.test_query_repetition_is_binary_or_count_as_declared) ... ok
+test_tf_cosine_matches_hand_calculation (test_engine.WeightingTests.test_tf_cosine_matches_hand_calculation) ... ok
+test_tfidf_cosine_matches_hand_calculation (test_engine.WeightingTests.test_tfidf_cosine_matches_hand_calculation) ... ok
+test_unknown_and_empty_queries (test_engine.WeightingTests.test_unknown_and_empty_queries) ... ok
+test_zero_idf_query_is_handled_without_nan (test_engine.WeightingTests.test_zero_idf_query_is_handled_without_nan) ... ok
+test_complete_experiment_persists_and_exports (test_experiment.EndToEndTests.test_complete_experiment_persists_and_exports) ... ok
+test_timing_batches_survive_connection_reopening (test_experiment.EndToEndTests.test_timing_batches_survive_connection_reopening) ... ok
+test_ap_counts_missing_relevant_as_zero (test_metrics.MetricTests.test_ap_counts_missing_relevant_as_zero) ... ok
+test_duplicate_document_is_invalid (test_metrics.MetricTests.test_duplicate_document_is_invalid) ... ok
+test_empty_ranking_scores_zero (test_metrics.MetricTests.test_empty_ranking_scores_zero) ... ok
+test_grade_order_does_not_change_binary_metrics (test_metrics.MetricTests.test_grade_order_does_not_change_binary_metrics) ... ok
+test_no_positive_judgment_requires_explicit_handling (test_metrics.MetricTests.test_no_positive_judgment_requires_explicit_handling) ... ok
+test_cross_origin_mutation_rejected (test_server.HttpTests.test_cross_origin_mutation_rejected) ... 127.0.0.1 - - [18/Oct/2026 16:34:13] "POST /api/search HTTP/1.1" 403 -
+ok
+test_invalid_topk_is_rejected (test_server.HttpTests.test_invalid_topk_is_rejected) ... 127.0.0.1 - - [18/Oct/2026 16:34:13] "POST /api/search HTTP/1.1" 400 -
+ok
+test_path_traversal_not_served (test_server.HttpTests.test_path_traversal_not_served) ... 127.0.0.1 - - [18/Oct/2026 16:34:13] "GET /../schema.sql HTTP/1.1" 404 -
+ok
+test_search_api_returns_three_methods (test_server.HttpTests.test_search_api_returns_three_methods) ... 127.0.0.1 - - [18/Oct/2026 16:34:13] "POST /api/search HTTP/1.1" 200 -
+ok
+test_status_and_static_ui (test_server.HttpTests.test_status_and_static_ui) ... 127.0.0.1 - - [18/Oct/2026 16:34:13] "GET /api/status HTTP/1.1" 200 -
+127.0.0.1 - - [18/Oct/2026 16:34:13] "GET / HTTP/1.1" 200 -
+ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 3.343s
+
+OK
